@@ -2,13 +2,13 @@
 name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 autolabeler:
-  - label: breaking-change
+  - label: breaking change
     title:
       - '/(?<!non[- ]?)breaking/i'
   - label: feature
     branch:
       - '/^feature/'
-  - label: patch-fix
+  - label: patch fix
     branch:
       - '/^fix/'
   - label: chore
@@ -17,10 +17,13 @@ autolabeler:
 categories:
   - title: Breaking Changes
     labels:
-      - breaking-change
+      - breaking change
+  - title: Feature Changes
+    labels:
+      - feature
   - title: Fixes
     labels:
-      - patch-fix
+      - patch fix
   - title: Maintenance
     labels:
       - chore
@@ -30,12 +33,12 @@ no-changes-template: '_No changes yet._'
 version-resolver:
   major:
     labels:
-      - breaking-change
+      - breaking change
   minor:
     labels:
       - minor
   patch:
     labels:
-      - patch-fix
+      - patch fix
       - chore
   default: minor
