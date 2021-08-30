@@ -1,0 +1,42 @@
+---
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+autolabeler:
+  - label: feature
+    branch:
+      - '/^feature/'
+  - label: fix
+    branch:
+      - '/^fix/'
+  - label: patch
+    branch:
+      - '/^fix/'
+  - label: chore
+    branch:
+      - '/^chore/'
+categories:
+  - title: Breaking Changes
+    labels:
+      - breaking-change
+  - title: Features
+    labels:
+      - feature
+  - title: Bug Fixes
+    labels:
+      - fix
+  - title: Maintenance
+    labels:
+      - chore
+change-template: '- $TITLE #$NUMBER (@$AUTHOR)'
+template: '$CHANGES'
+version-resolver:
+  major:
+    labels:
+      - breaking-change
+  minor:
+    labels:
+      - minor
+  patch:
+    labels:
+      - patch
+  default: minor
