@@ -27,6 +27,8 @@ categories:
   - title: Maintenance
     labels:
       - chore
+exclude-labels:
+  - skip-changelog
 change-template: '- $TITLE #$NUMBER (@$AUTHOR)'
 template: '$CHANGES'
 no-changes-template: '_No changes yet._'
