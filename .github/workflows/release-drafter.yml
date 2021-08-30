@@ -30,7 +30,7 @@ categories:
     labels:
       - chore
 change-template: '- $TITLE #$NUMBER (@$AUTHOR)'
-template: $CHANGES
+template: '$CHANGES'
 version-resolver:
   major:
     labels:
