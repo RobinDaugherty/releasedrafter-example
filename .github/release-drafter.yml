@@ -15,7 +15,7 @@ autolabeler:
     branch:
       - '/^chore/'
 categories:
-  - title: Breaking Changes
+  - title: ⚠ Breaking Changes
     labels:
       - breaking change
   - title: Feature Changes
@@ -29,7 +29,7 @@ categories:
       - chore
 exclude-labels:
   - skip-changelog
-change-template: '- $TITLE #$NUMBER (@$AUTHOR)'
+change-template: '- $TITLE (@$AUTHOR) #$NUMBER'
 template: '$CHANGES'
 no-changes-template: '_No changes yet._'
 version-resolver:
