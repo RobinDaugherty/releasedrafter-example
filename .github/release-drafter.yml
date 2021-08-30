@@ -18,12 +18,12 @@ categories:
   - title: Breaking Changes
     labels:
       - breaking-change
-  - title: Features
+  - title: Feature Changes
     labels:
       - feature
-  - title: Bug Fixes
+  - title: Fixes
     labels:
-      - fix
+      - patch-fix
   - title: Maintenance
     labels:
       - chore
