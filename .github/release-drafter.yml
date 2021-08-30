@@ -29,6 +29,7 @@ categories:
       - chore
 change-template: '- $TITLE #$NUMBER (@$AUTHOR)'
 template: '$CHANGES'
+no-changes-template: '_No changes yet._'
 version-resolver:
   major:
     labels:
