@@ -4,10 +4,12 @@ name: Draft Release
 
 on:
   push:
+    # Run on merge into a main branch, which covers merged pull requests
     branches:
       - main
       - master
   pull_request:
+    # Run on new pull request so that autolabeling happens
     types: [opened, reopened, synchronize]
 
 jobs:
