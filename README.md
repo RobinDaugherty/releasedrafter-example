@@ -11,23 +11,23 @@ When a pull request opens, tags are added to the PR based on the branch name/tit
 As configured in this repo, the following labels are automatically added:
 
 - `feature` if the branch name starts with "feature"
-- `patch-fix` if the branch name starts with "fix"
+- `patch fix` if the branch name starts with "fix"
 - `chore` if the branch name starts with "chore"
-- `breaking-change` if the *pull request title* contains the word "breaking"
+- `breaking change` if the *pull request title* contains the word "breaking"
 
 ## Releaser
 
 When the main branch gets a new commit (including a PR merge) the next draft release is built based on the unreleased commits.
 
-When release notes are being drafted, semantic versioning is followed: `major`.`minor`.`patch`
+When release notes are being drafted, semantic versioning is followed: _major_._minor_._patch_ with the tag having the prefix "v".
 
 _For this to give the next draft release a name, you must already have an existing release, since numbering will be continued from there._
 
-The default is that a "minor" release is drafted, which bumps the version `minor`.
+By default a minor release is drafted.
 
-But if _all_ PRs in the release are tagged `patch-fix` or `chore`, a patch release is drafted, bumping the version `patch`.
+But if _all_ PRs in the release are tagged `patch fix` or `chore`, a patch release is drafted.
 
-But if _any_ PR in the release is tagged `breaking-change`, a major release is drafted, bumping the version `major`.
+But if _any_ PR in the release is tagged `breaking change`, a major release is drafted.
 
 ## Testing this repository
 
