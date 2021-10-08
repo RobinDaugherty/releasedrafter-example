@@ -38,7 +38,7 @@ version-resolver:
       - breaking change
   minor:
     labels:
-      - minor
+      - feature
   patch:
     labels:
       - patch fix
